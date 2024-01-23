@@ -4,8 +4,6 @@ Instructions for this sprint can be found here:
 
 https://l2c.northcoders.com/courses/fe/form-validation
 
-
-
 ## Form choices:
 
 Below are some examples of forms that your users could use to submit information. Choose one of the following options or come up with your own theme if you're feeling creative. Just remember, the point of this is to validate the users inputs and provide appropriate feedback so make sure that you can apply some kind of restriction to the user input.
