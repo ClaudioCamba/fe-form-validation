@@ -3,25 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js" defer>
-      </scriptsrc>
-    </script>
+    <script src="index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <form action="./submitpage.html" method="post" id="business-card">
-      <label for="first-name">First name</label>
-      <input type="text" id="first-name" />
-      <label for="last-name">Last name</label>
-      <input type="text" id="last-name" />
-      <label for="company">Company</label>
-      <input type="text" id="company" />
-      <label for="job-title">Job title</label>
-      <input type="text" id="job-title" />
-      <label for="email">Email</label>
-      <input type="text" id="email" />
-      <label for="phone-number">Phone number</label>
-      <input type="text" id="phone-number" />
+    <form action="./submitpage.html" method="get" id="business-card">
+      <label for="first-name">First name: 
+        <input type="text" id="first-name" name="fname"/>
+        <div class="error"></div>
+      </label>
+     
+      <label for="last-name">Last name:
+        <input type="text" id="last-name" name="lname"/>
+        <div class="error"></div>
+      </label>
+      
+      <label for="company">Company:
+        <input type="text" id="company" name="cname" />
+        <div class="error"></div>
+      </label>
+      
+      <label for="job-title">Job title:
+        <input type="text" id="job-title" name="jtitle"/>
+        <div class="error"></div>
+      </label>
+      
+      <label for="email">Email:
+        <input type="email" id="email" name="email"/>
+        <div class="error"></div>
+      </label>
+      
+      <label for="phone-number">Phone number:
+        <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="pnumber"/>
+        <div class="error"></div>
+      </label>
+      
       <button type="submit">Submit</button>
     </form>
   </body>
