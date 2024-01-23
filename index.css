@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background: lightgrey;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    width: 100%;
+    background: #bfbebe;
+    padding: 30px;
+    border: 1px solid #b3b3b3;
+    border-radius: 15px;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-bottom: 15px;
+}
+
+.notice {
+    display: none;
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.notice.invalid {
+    display: block;
+    color: rgb(129, 0, 0);
+    background: rgb(250, 182, 182);
+   
+}
+
+.notice.valid {
+    display: block;
+    color: rgb(0, 129, 47);
+    background: rgb(182, 250, 194);
+}
